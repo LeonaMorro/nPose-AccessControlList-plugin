@@ -8,9 +8,9 @@
 // SET:Poses:Visitors{!myFriends}
 // SET:Poses:Friends{myFriends}
 //
-// in addtion to the two notecards above, you have to make a custom notecard:
+// in addtion to the two notecards above, you have to create a custom notecard:
 // notecard name: myFriendsList
-// notecard content (Avatar UUIDs, change them to whatever you want):
+// notecard content (Avatar UUIDs, change them to whatever you want)(do NOT use "," inside the nc):
 // 469c9c40-d5fd-4040-a182-d48d68d77d72
 // 6934889c-67c7-4b1d-9bbe-9cf84f1d12ad
 // ...
@@ -26,7 +26,7 @@ string MY_PERMISSION_NAME="myFriends";
 integer USER_PERMISSION_UPDATE=-806;
 integer NC_READER_REQUEST=224;
 integer NC_READER_RESPONSE=225;
-string NC_READER_CONTENT_SEPARATOR="℥";
+string NC_READER_CONTENT_SEPARATOR="%&§";
 
 key scriptId;
 

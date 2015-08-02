@@ -1,4 +1,4 @@
-// LSL script generated - patched Render.hs (0.1.6.2): LSLScripts.nPose AccessControlList.lslp Sun Jul 26 16:19:06 Mitteleuropäische Sommerzeit 2015
+// LSL script generated - patched Render.hs (0.1.6.2): LSLScripts.nPose AccessControlList.lslp Sun Aug  2 17:45:16 Mitteleuropäische Sommerzeit 2015
 // This example shows you how to register and use an user defined permission
 // in combination with the NC Reader
 // If you put this script into your nPose build, you will be able to use
@@ -9,9 +9,9 @@
 // SET:Poses:Visitors{!myFriends}
 // SET:Poses:Friends{myFriends}
 //
-// in addtion to the two notecards above, you have to make a custom notecard:
+// in addtion to the two notecards above, you have to create a custom notecard:
 // notecard name: myFriendsList
-// notecard content (Avatar UUIDs, change them to whatever you want):
+// notecard content (Avatar UUIDs, change them to whatever you want)(do NOT use "," inside the nc):
 // 469c9c40-d5fd-4040-a182-d48d68d77d72
 // 6934889c-67c7-4b1d-9bbe-9cf84f1d12ad
 // ...
@@ -22,7 +22,7 @@
 
 string MY_NC_NAME = "myFriendsList";
 string MY_PERMISSION_NAME = "myFriends";
-string NC_READER_CONTENT_SEPARATOR = "℥";
+string NC_READER_CONTENT_SEPARATOR = "%&§";
 
 key scriptId;
 
