@@ -1,4 +1,4 @@
-// This example shows you how to register and use an User Defined Permission 
+// This example shows you how to register and use an User Defined Permission
 // in combination with the NC Reader
 // If you put this script into your nPose build, you will be able to use
 // the permission {myFriends}.That allows you to make a list with Avatar UUIDs
