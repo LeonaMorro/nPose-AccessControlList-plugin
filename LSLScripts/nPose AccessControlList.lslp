@@ -1,15 +1,15 @@
 // This example shows you how to register and use an User Defined Permission
 // in combination with the NC Reader
 // If you put this script into your nPose build, you will be able to use
-// the permission {myFriends}.That allows you to make a list with Avatar UUIDs
+// the permission {ACL}. That allows you to make a list with Avatar UUIDs
 // which are allowed to use certain buttons
 //
 // example:
-// SET:Poses:Friends{myFriends}
-// SET:Poses:Visitors{!myFriends}
+// SET:Poses:Friends{ACL}
+// SET:Poses:Visitors{!ACL}
 //
-// in addtion to the two notecards above, you have to create a custom notecard:
-// notecard name: myFriendsList
+// in addition to the two notecards above, you have to create a custom notecard:
+// notecard name: accessControlList
 // notecard content (Avatar UUIDs, change them to whatever you want)(do NOT use "," inside the nc):
 // 469c9c40-d5fd-4040-a182-d48d68d77d72
 // 6934889c-67c7-4b1d-9bbe-9cf84f1d12ad
@@ -26,8 +26,8 @@
 // or IM slmember1 Resident (Leona)
 
 
-string MY_NC_NAME="myFriendsList";
-string MY_PERMISSION_NAME="myFriends";
+string MY_NC_NAME="accessControlList";
+string MY_PERMISSION_NAME="ACL";
 
 
 integer USER_PERMISSION_UPDATE=-806;
