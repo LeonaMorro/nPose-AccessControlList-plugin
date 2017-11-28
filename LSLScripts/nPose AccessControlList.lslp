@@ -47,7 +47,7 @@ updatePermissionList(string permissionName, string theListAsAString) {
 	theListAsAString=llDumpList2String(llParseStringKeepNulls(theListAsAString, ["|"], []), "");
 	theListAsAString=llDumpList2String(llParseStringKeepNulls(theListAsAString, ["="], []), "");
 	//send the message
-	llMessageLinked(LINK_SET, UDPLIST, MY_PERMISSION_NAME + "=" + theListAsAString, NULL_KEY);
+	llMessageLinked(LINK_SET, UDPLIST, permissionName + "=" + theListAsAString, NULL_KEY);
 }
 
 default {
